@@ -1,0 +1,941 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp.dll:
+    - EnvironmentCheck
+    - FPSCounter
+    - PlayerInputHandler
+    - PlayerStateMachine
+    Unity.Cinemachine.dll:
+    - Unity.Cinemachine.CinemachineBrain
+    - Unity.Cinemachine.CinemachineCamera
+    - Unity.Cinemachine.CinemachinePositionComposer
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
+    - Packages.Rider.Editor.RiderScriptEditorPersistedState
+    Unity.Splines.Editor.dll:
+    - UnityEditor.Splines.CreateSplineTool
+    - UnityEditor.Splines.SelectionContext
+    Unity.TextMeshPro:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+  serializedClasses:
+    Unity.Cinemachine:
+    - Unity.Cinemachine.CameraTarget
+    - Unity.Cinemachine.CinemachineBlendDefinition
+    - Unity.Cinemachine.CinemachineBrain/LensModeOverrideSettings
+    - Unity.Cinemachine.LensSettings
+    - Unity.Cinemachine.LensSettings/PhysicalSettings
+    - Unity.Cinemachine.LookaheadSettings
+    - Unity.Cinemachine.PrioritySettings
+    - Unity.Cinemachine.ScreenComposerSettings
+    - Unity.Cinemachine.ScreenComposerSettings/DeadZoneSettings
+    - Unity.Cinemachine.ScreenComposerSettings/HardLimitSettings
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
+    - UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord
+    - UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord
+    - UnityEngine.TextCore.LowLevel.GlyphValueRecord
+  methodsToPreserve: []
+  sceneClasses:
+    Assets/3dTo2d.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 19894}
+    - Class: 114
+      Script: {instanceID: 19940}
+    - Class: 114
+      Script: {instanceID: 20168}
+    - Class: 114
+      Script: {instanceID: 20188}
+    - Class: 114
+      Script: {instanceID: 20366}
+    - Class: 114
+      Script: {instanceID: 20478}
+    - Class: 114
+      Script: {instanceID: 20584}
+    - Class: 114
+      Script: {instanceID: 20640}
+    - Class: 114
+      Script: {instanceID: 20668}
+    - Class: 114
+      Script: {instanceID: 20718}
+    - Class: 114
+      Script: {instanceID: 21106}
+    - Class: 114
+      Script: {instanceID: 21486}
+    - Class: 114
+      Script: {instanceID: 21492}
+    - Class: 114
+      Script: {instanceID: 22148}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: dd9dda1dfd39e605c49e72003342ef5d
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 4f98fc88b8ae71417a7491bc7da4be8a
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineFreeLookModifier
+  - hash:
+      serializedVersion: 2
+      Hash: b913de1592fe49828011be0784e0afc6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FPSCounter
+  - hash:
+      serializedVersion: 2
+      Hash: f379904be705ab5dd721d6f3b4bdf3d2
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineRotateWithFollowTarget
+  - hash:
+      serializedVersion: 2
+      Hash: caa50ac10633f36c9b956bfa1dc6a2a9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerInputHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 8f8118cbbc57e7ab94f40e42abd7e2b6
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineVirtualCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 28fd3d045acc780719a17f02073eb448
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 987a2f42d4dfcdd35c82821a2f39743a
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineSplineDollyLookAtTargets
+  - hash:
+      serializedVersion: 2
+      Hash: ee989c3b1cc22890bc1a094097348594
+    assemblyName: Unity.Splines
+    namespaceName: UnityEngine.Splines
+    className: SplineContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 5a9c960fe06e2673290669d21aa0d69c
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachinePixelPerfect
+  - hash:
+      serializedVersion: 2
+      Hash: 6e778c2762d85debab2a8d56193feb86
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineOrbitalFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 1ce087e28606f62f0d2ee1ff5b56f479
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Cube
+  - hash:
+      serializedVersion: 2
+      Hash: 112f1b782c8054fe0791bd8774367be2
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineTouchInputMapper
+  - hash:
+      serializedVersion: 2
+      Hash: 25a70ac19eb2e03345166c9dc471ca06
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: GroupWeightManipulator
+  - hash:
+      serializedVersion: 2
+      Hash: c5be3766e4d038e9592329ac1c228cf1
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineTargetGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 90ede38047e36418d678b418c27b5a84
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineInputAxisController
+  - hash:
+      serializedVersion: 2
+      Hash: 7d557386247f1dae0a292507110377a8
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineSequencerCamera
+  - hash:
+      serializedVersion: 2
+      Hash: bd2d9b072e71e348486414804becb6fe
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachinePath
+  - hash:
+      serializedVersion: 2
+      Hash: 33f160a5c07e580c29aba2bd1e4db811
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 3ea13ef8b4da536f722616070ab33747
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerStateMachine
+  - hash:
+      serializedVersion: 2
+      Hash: 5874b789cd9832847c61ebfa803213af
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UIElements
+    className: PanelEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 8a42fda30872544cc41dd122bff6925c
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineDollyCart
+  - hash:
+      serializedVersion: 2
+      Hash: 973907bb2a1fa8d6c22cbd5fab2de2fe
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachinePositionComposer
+  - hash:
+      serializedVersion: 2
+      Hash: 99bb9140774a8f8cac89436af29b544d
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineDeoccluder
+  - hash:
+      serializedVersion: 2
+      Hash: 318c05e600784246d034e8495772110e
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineConfiner3D
+  - hash:
+      serializedVersion: 2
+      Hash: c09a59d12f535f2a4c806801f2de230e
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineClearShot
+  - hash:
+      serializedVersion: 2
+      Hash: cf62aad97f6c2dd5d482e2509c6c9528
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: e8d390bd9ecacc453a7500b90d0c0292
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.EventSystems
+    className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 5ebc58ec194dd44630b25fcc270ad4af
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 096697c69786e4e7a688a8ed5bec008e
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineStoryboard
+  - hash:
+      serializedVersion: 2
+      Hash: 948f742c14cf06ad1505535fa059fff9
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 4fcf0bb4aff1d14a1dfcdedc4b07bd05
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.EventSystems
+    className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 8703b6ae2b0eefd9dafbc44d8d333fb1
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: d7e96237847e9b7ebf698e6a85de5099
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineFollow
+  - hash:
+      serializedVersion: 2
+      Hash: c00826b2379e4bc3f3b4fb846b0a162d
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineBlenderSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 1ab136900c0edaeeb49424c852595030
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: e987953190eb4c12cf19df790566dc2c
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.EventSystems
+    className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 5a4aa2850fe11587f47e34c270c7fd22
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 8e6dc3d79712ca4934f6d50c80f010b1
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 035633c90ee8d8cf9a02e04922a59238
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineSmoothPath
+  - hash:
+      serializedVersion: 2
+      Hash: cf32d98954e63b8e30e9334b152e9b8e
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.EventSystems
+    className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: a5a2404c0b8cf518b73c8156fbc91dfc
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineExternalImpulseListener
+  - hash:
+      serializedVersion: 2
+      Hash: b747f5d40674055dd70e18552f1b0447
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: df9aee1894d42581df414c1e29a80b2a
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineRotationComposer
+  - hash:
+      serializedVersion: 2
+      Hash: 7053e305cdc1eb560f4c3be49d3b5136
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.EventSystems
+    className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 68589f954d791c9cedae48d270204814
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineThirdPersonAim
+  - hash:
+      serializedVersion: 2
+      Hash: ea182e54ebab6e119fcd433f04c864b4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Listner
+  - hash:
+      serializedVersion: 2
+      Hash: e7e95903ca66d58e1a7cbd71f824e16d
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 810e3c228b295cc60c4de2cdd94b18cb
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: bf1cce2e164ce51b9f7fd97f728ac9db
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineCollisionImpulseSource
+  - hash:
+      serializedVersion: 2
+      Hash: 95cec85248d20787021305cfe145ab16
+    assemblyName: Unity.Splines
+    namespaceName: UnityEngine.Splines
+    className: SplineInstantiate
+  - hash:
+      serializedVersion: 2
+      Hash: e6b258489c88376c5869946b2735e7e5
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: b5007673bbbdb9d12597a1d8201370f5
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: e81bf7d4290eb9291aa9e23e90b97774
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineBrain
+  - hash:
+      serializedVersion: 2
+      Hash: 33656f83bb0079184b2206a69690ec46
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: d7d424ed392cf89bdce865cf7461334f
+    assemblyName: Unity.Splines
+    namespaceName: UnityEngine.Splines
+    className: SplineAnimate
+  - hash:
+      serializedVersion: 2
+      Hash: 9104447b683bf70406fa01f12ecb564a
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 722208307ebb0d8f6bec35863c021674
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineTrackedDolly
+  - hash:
+      serializedVersion: 2
+      Hash: d5cd7f207e91ca8336c65a577a6fb2a0
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 3e87b10f8a748ee9793e3d268e3bab8a
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineStateDrivenCamera
+  - hash:
+      serializedVersion: 2
+      Hash: c152307c7934a040fa20d52a886f8e77
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineSplineSmoother
+  - hash:
+      serializedVersion: 2
+      Hash: c87a29ed5cc1bfd6a554725719ee4df7
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineSplineRoll
+  - hash:
+      serializedVersion: 2
+      Hash: 681cbc6a19eb22f9f164d8c83acdc61d
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineFollowZoom
+  - hash:
+      serializedVersion: 2
+      Hash: 55060a7bf226ac385ce19ebd450f199f
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UIElements
+    className: PanelRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 8dff8e9853297d341afa0c11f9091b59
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: 00bbd9db8634496d079d17711b2ff7c4
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 97295426908a1cfa6c3b547faeff3a0c
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineFreeLook
+  - hash:
+      serializedVersion: 2
+      Hash: 25593d47dedf8bac7f9c57469c439902
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineTriggerAction
+  - hash:
+      serializedVersion: 2
+      Hash: e2ea44611601de69f4be725bfb72be4b
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineCameraOffset
+  - hash:
+      serializedVersion: 2
+      Hash: 33399aa50372dcde640a228b0ff54e2d
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineThirdPersonFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 17381ac6f63b1993b0882fbbe000f4ab
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineLegacyCameraEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 8bdf39615375786f137bc815d5b6454d
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineCollider
+  - hash:
+      serializedVersion: 2
+      Hash: c9b9b11b067e5a76d46638f6d93e49ce
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineHardLookAt
+  - hash:
+      serializedVersion: 2
+      Hash: e0496fe739e6020ef36b47ebdaced542
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineInputProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 5289cc8018a9b4b277e790bb6131262b
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineMixingCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 915204dac8acad99f076d6e72ada0a0f
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 1ddccc9c3a58e54eb8e26c06445acef1
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineFramingTransposer
+  - hash:
+      serializedVersion: 2
+      Hash: db6133687572f9dc24f1fd4238ef9b83
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: bfa9d6dfbc3c74a843a3b197bdcc6639
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: ffa31669ca85e6e3bd927550633c66a1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Event
+  - hash:
+      serializedVersion: 2
+      Hash: 48c646ce0442b8e8e8dd0ebbea1a6837
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineComposer
+  - hash:
+      serializedVersion: 2
+      Hash: 8dc40a01667ca02b3354a4e7a61be082
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 3627438fae6dba806ab6b980e10a2255
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineSplineCart
+  - hash:
+      serializedVersion: 2
+      Hash: 10c17b309bdca62b4d7fbaf113ed4ca0
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: 817d719114f1c2641836415a0e0e772a
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineOrbitalTransposer
+  - hash:
+      serializedVersion: 2
+      Hash: 9da926302ede7010a2620f727037e201
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineConfiner
+  - hash:
+      serializedVersion: 2
+      Hash: 534896cd16790ae23619b486ffd94129
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineSameAsFollowTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 4b921dbdbd3bf206a01cfcaac0ff5702
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineConfiner2D
+  - hash:
+      serializedVersion: 2
+      Hash: 13f262cc0741566a7ab72682984bc3e1
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: c77b8049ee2d49480abd1cf884014792
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineImpulseSource
+  - hash:
+      serializedVersion: 2
+      Hash: 7c19cde64cdf8f017b6ebbab2f58ad80
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineImpulseListener
+  - hash:
+      serializedVersion: 2
+      Hash: 20a120e55ad3ab65556328d5fd8309dd
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 4878e735441f4041539853759559c86f
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: afb7b65d28d5a7423e69a1b076be0064
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: aeabf1b9984c63aa96281fb83b3bdfbd
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: NoiseSettings
+  - hash:
+      serializedVersion: 2
+      Hash: c27a8d9749b8e0f0b4c594f264548ac6
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineBrainEvents
+  - hash:
+      serializedVersion: 2
+      Hash: a19216c51dea4b9312068ef82662f619
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineCameraEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 1553f209ae0b2d5d3a35685fca55f9c3
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 15bdeb9669a4fe5f738fed9441046056
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineRecomposer
+  - hash:
+      serializedVersion: 2
+      Hash: b235c23342f460997138502ac21fd7d8
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineBasicMultiChannelPerlin
+  - hash:
+      serializedVersion: 2
+      Hash: 1b00fc26f9cb78681d48ada37281260c
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineExternalCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 8d5318ed8488b1fe17c08044ce1b8309
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 9d7a0da63e44880f56b79df72069f31f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EnvironmentCheck
+  - hash:
+      serializedVersion: 2
+      Hash: 9a41f6fbdb23b1dc3461204ccec69629
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachinePanTilt
+  - hash:
+      serializedVersion: 2
+      Hash: f3dea08bb9b0271aa1c5bf872d5ec635
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineAutoFocus
+  - hash:
+      serializedVersion: 2
+      Hash: e18dfd2b913b09fbbb2405165a2e6a44
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 49087b2481fd9708ba4c89dd6c6cd5bc
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachinePipeline
+  - hash:
+      serializedVersion: 2
+      Hash: 3b5263a98bcc71d9a9d1d78a31b34ced
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 704662b4c37c177b3f180b7b725ead3b
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: Cinemachine3rdPersonFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 4b6627b2ea8f2830039e3ef9d94829c8
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineShotQualityEvaluator
+  - hash:
+      serializedVersion: 2
+      Hash: 90aafdbe0a9cd12a778a155bb12982ee
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineCameraManagerEvents
+  - hash:
+      serializedVersion: 2
+      Hash: d41ab9b5ea92474f9c0a6937a0607ce1
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: a1ac4c50e55874de16eee3db71aa9784
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: c77a06db4d15575553e8821199e3f93e
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineGroupComposer
+  - hash:
+      serializedVersion: 2
+      Hash: 185e7bacfbbc5defefa609c70f7ff4ce
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 1a680d9a08de79b0d2c779e78c9843b4
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 28dcf9df3c8532286db2ea8e40e52d66
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineHardLockToTarget
+  - hash:
+      serializedVersion: 2
+      Hash: d1c227ea5598da0ed4598c327a53bff6
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineDecollider
+  - hash:
+      serializedVersion: 2
+      Hash: c7dbf51e84b03c7dfbe6b1b12ee989d2
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachinePOV
+  - hash:
+      serializedVersion: 2
+      Hash: e6ee7dccba41ae87d10e3d922c6cb71c
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 53e329840e6d03aebec76623c3b054db
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 3773805f0a1ff0ade20d5353c2a21878
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineDoNotUpgrade
+  - hash:
+      serializedVersion: 2
+      Hash: 540882762544409cc4530e60db00e951
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: a90f6a00b23520788be7d89ee3b0773d
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: 8bbce9932f67ad8e7f4eefec87800f94
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 0860e6a7a2fbcc0a57f8ef16016f848a
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineFixedSignal
+  - hash:
+      serializedVersion: 2
+      Hash: 501898370ee0904e6a113faaed11fffd
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineTransposer
+  - hash:
+      serializedVersion: 2
+      Hash: d0cdd713f9bf4e6a625d9e7804deca42
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 3de6f85b27a4d52edc5054990a37fd82
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineGroupFraming
+  - hash:
+      serializedVersion: 2
+      Hash: 4367594cef8038e7a571179cbb9e5897
+    assemblyName: Unity.Cinemachine
+    namespaceName: Unity.Cinemachine
+    className: CinemachineSplineDolly
+  - hash:
+      serializedVersion: 2
+      Hash: 1b530010f2091e92c6d83e25022dba3e
+    assemblyName: Unity.Splines
+    namespaceName: UnityEngine.Splines
+    className: SplineExtrude
+  platform: 19
+  scenePathNames:
+  - Assets/3dTo2d.unity
+  playerPath: D:/New folder (2)/New Unity Project/build1/New Unity Project.exe
