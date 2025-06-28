@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/3dTo2d.unity
+    path: Assets/Scene/3dTo2d.unity
     guid: 2022b22aa273ba74594e2c20ee31e496
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
