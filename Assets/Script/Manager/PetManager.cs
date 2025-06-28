@@ -8,6 +8,9 @@ public class PetManager : MonoBehaviour {
 
     private HashSet<string> foundPets = new HashSet<string>();
 
+    public delegate void OnPetFound(string petID);
+    public event OnPetFound PetFoundEvent;
+    
     private void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -31,6 +34,7 @@ public class PetManager : MonoBehaviour {
             foundPets.Add(pet.petID);
             Debug.Log($"Pet found: {pet.petName}");
             AchievementManager.Instance.CheckAchievements(foundPets.Count);
+            PetFoundEvent?.Invoke(pet.petID);  
         }
     }
 
