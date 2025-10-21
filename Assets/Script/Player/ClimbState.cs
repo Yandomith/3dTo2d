@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class ClimbState : PlayerState
 {
@@ -9,16 +10,31 @@ public class ClimbState : PlayerState
     {
         base.Enter();
         Debug.Log("Entering Climb State");
-        animator.Play("Climbing Up Wall");
         rb.useGravity = false;
 
-        if (stateMachine.animator != null)
-            stateMachine.animator.SetBool("isClimbing", true);
     }
 
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+        float vertical = stateMachine.inputHandler.ClimbInput;
+        // Check if the player is moving up or down
+        if (vertical > 0.01f || vertical < -0.01f )
+        {
+            // Climbing (up or down)
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Climbing Up Wall"))
+            {
+                animator.Play("Climbing Up Wall" , 0,0f);
+            }
+        }
+        else
+        {
+            // Idle on wall (not moving)
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+            {
+                animator.Play("Neutral Idle",0,0f);
+            }
+        }
 
     }
 
@@ -29,6 +45,7 @@ public class ClimbState : PlayerState
         float vertical = stateMachine.inputHandler.ClimbInput;
 
         rb.linearVelocity = new Vector3(0f, vertical * stateMachine.climbSpeed, 0f);
+       
     }
 
     public override void Exit()
@@ -37,7 +54,5 @@ public class ClimbState : PlayerState
 
         rb.useGravity = true;
 
-        if (stateMachine.animator != null)
-            stateMachine.animator.SetBool("isClimbing", false);
     }
 }

@@ -7,7 +7,7 @@ public class IdleState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        // animator.Play("Neutral Idle");
+         animator.Play("Neutral Idle", 0, 0f);
         Debug.Log("Entering Idle State");
         
     }

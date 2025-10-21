@@ -15,7 +15,7 @@ public class MoveState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        // animator.Play("Running");
+         animator.Play("Running", 0, 0f);
         Debug.Log("Entered Move State");
 
 
@@ -32,16 +32,6 @@ public class MoveState : PlayerState
             stateMachine.Flip();
         else if (moveInput < 0 && stateMachine.facingRight)
             stateMachine.Flip();
-
-
-
-
-     
-
-
-
-
-
 
 
 

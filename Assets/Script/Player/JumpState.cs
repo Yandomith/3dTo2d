@@ -3,6 +3,9 @@ using UnityEngine;
 public class JumpState : PlayerState
 {
     private bool jumpStarted;
+    private float minJumpDuration = 0.2f;
+    public float JumpTimer { get; private set; } = 0f;
+
 
     public JumpState(PlayerStateMachine stateMachine, Rigidbody rb , Animator animator) : base(stateMachine , rb ,animator)
     {
@@ -14,7 +17,8 @@ public class JumpState : PlayerState
         base.Enter();
         Debug.Log("Entering Jump State");
         jumpStarted = false;
-        animator.Play("Jump");
+        JumpTimer = 0f;
+        animator.Play("Jump", 0, 0f);
         
         stateMachine.rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
         stateMachine.rb.AddForce(Vector3.up * stateMachine.jumpForce, ForceMode.Impulse);
@@ -25,7 +29,7 @@ public class JumpState : PlayerState
     {
         base.LogicUpdate();
 
-        
+        JumpTimer += Time.deltaTime;
         float moveInput = stateMachine.inputHandler.MoveInput;
         Vector3 velocity = rb.linearVelocity;
         velocity.x = moveInput * stateMachine.moveSpeed;
