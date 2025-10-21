@@ -11,7 +11,7 @@ public class FallState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        animator.Play("Falling Idle");
+        animator.Play("Falling Idle", 0, 0f);
         Debug.Log("Entering Fall State");
         surfaceChecked = false;
         
