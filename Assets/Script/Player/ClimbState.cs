@@ -1,8 +1,4 @@
 using UnityEngine;
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 
 
 public class ClimbState : PlayerState

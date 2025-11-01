@@ -256,15 +256,6 @@ public class PlayerStateMachine : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
-<<<<<<< Updated upstream
-    
-    protected void UpdateSpeedParameter()
-    {
-        float maxSpeed = moveSpeed; // or whatever your top speed is
-        float currentSpeed = Mathf.Abs(rb.linearVelocity.x);
-=======
-
->>>>>>> Stashed changes
 
 
 
