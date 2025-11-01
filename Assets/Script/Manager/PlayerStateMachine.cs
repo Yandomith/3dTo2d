@@ -60,7 +60,6 @@ public class PlayerStateMachine : MonoBehaviour
         HandleTransitions();
         CurrentState?.LogicUpdate();
         jumpTimeElapsed += Time.deltaTime;
-        UpdateSpeedParameter(); 
     }
 
     void FixedUpdate()
@@ -114,8 +113,10 @@ public class PlayerStateMachine : MonoBehaviour
             shouldFall = false;
         }
 
-
+        #region Swim State Exit Check
         if (CurrentState == SwimState && !environmentCheck.IsInWater)
+
+
         {
             if (environmentCheck.IsGrounded)
             {
@@ -131,18 +132,21 @@ public class PlayerStateMachine : MonoBehaviour
 
             return;
         }
+        #endregion
 
-
+        #region Swim State Entry Check
         if (environmentCheck.IsInWater)
         {
+
             if (CurrentState != SwimState)
             {
                 ChangeState(SwimState);
                 return;
             }
         }
+        #endregion
 
-
+        #region Climb State Entry/Exit Check
         if (environmentCheck.IsClimbing)
         {
             if (CurrentState != ClimbState && Mathf.Abs(inputHandler.ClimbInput) > 0.1f)
@@ -162,7 +166,7 @@ public class PlayerStateMachine : MonoBehaviour
             ChangeState(Mathf.Abs(inputHandler.MoveInput) > 0.1f ? MoveState : FallState);
             return;
         }
-
+        #endregion
 
         if (CurrentState == IdleState)
         {
@@ -198,6 +202,9 @@ public class PlayerStateMachine : MonoBehaviour
         }
         else if (CurrentState == JumpState)
         {
+            JumpState jumpState = (JumpState)CurrentState;
+            if (jumpState.JumpTimer < 0.2f) return; // prevent early switching
+ 
             if (rb.linearVelocity.y <= 0 && jumpTimeElapsed > 0.1f)
             {
                 if (environmentCheck.IsInWater)
@@ -217,7 +224,6 @@ public class PlayerStateMachine : MonoBehaviour
                 }
             }
         }
-
         else if (CurrentState == FallState)
         {
             if (environmentCheck.IsGrounded)
@@ -228,7 +234,9 @@ public class PlayerStateMachine : MonoBehaviour
                     ChangeState(IdleState);
             }
         }
+      
     }
+ 
 
     public void ChangeState(PlayerState newState)
     {
@@ -258,8 +266,6 @@ public class PlayerStateMachine : MonoBehaviour
 
 >>>>>>> Stashed changes
 
-        float normalizedSpeed = Mathf.Clamp01(currentSpeed / maxSpeed);
-        smoothedSpeed = Mathf.Lerp(smoothedSpeed, normalizedSpeed, Time.deltaTime / speedSmoothTime);// 0 to 1
-        animator.SetFloat("Speed", smoothedSpeed);
-    }
+
+
 }
