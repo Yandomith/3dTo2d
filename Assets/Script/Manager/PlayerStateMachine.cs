@@ -16,6 +16,7 @@ public class PlayerStateMachine : MonoBehaviour
     public float climbSpeed = 3f;
 
     public float swimSpeed = 3f;
+    public float currentWaterSurfaceY;
 
     public float minDrag;
     public float maxDrag = 5f;
@@ -247,11 +248,15 @@ public class PlayerStateMachine : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
+<<<<<<< Updated upstream
     
     protected void UpdateSpeedParameter()
     {
         float maxSpeed = moveSpeed; // or whatever your top speed is
         float currentSpeed = Mathf.Abs(rb.linearVelocity.x);
+=======
+
+>>>>>>> Stashed changes
 
         float normalizedSpeed = Mathf.Clamp01(currentSpeed / maxSpeed);
         smoothedSpeed = Mathf.Lerp(smoothedSpeed, normalizedSpeed, Time.deltaTime / speedSmoothTime);// 0 to 1
