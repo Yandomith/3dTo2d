@@ -31,6 +31,8 @@ public class SwimState : PlayerState
     {
         base.Enter();
         Debug.Log("Entering Swim State");
+        waterSurfaceY = stateMachine.currentWaterSurfaceY;
+
         rb.linearDamping = 1f;
         animator.SetBool("IsSwimming", true);
         animator.SetFloat("swimSpeed", 0f);
@@ -160,6 +162,7 @@ public class SwimState : PlayerState
         float dragAmount = Mathf.Lerp(stateMachine.minDrag, stateMachine.maxDrag, t);
 
         Vector3 velocity = rb.linearVelocity;
+        velocity.x *= (1f - dragAmount * Time.fixedDeltaTime);
         velocity.y *= (1f - dragAmount * Time.fixedDeltaTime);
         rb.linearVelocity = new Vector3(velocity.x, velocity.y, velocity.z);
     }
