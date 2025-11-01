@@ -16,6 +16,7 @@ public class PlayerStateMachine : MonoBehaviour
     public float climbSpeed = 3f;
 
     public float swimSpeed = 3f;
+    public float currentWaterSurfaceY;
 
     public float minDrag;
     public float maxDrag = 5f;
@@ -255,7 +256,7 @@ public class PlayerStateMachine : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
-    
+
 
 
 }
